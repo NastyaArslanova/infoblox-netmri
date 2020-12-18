@@ -4,8 +4,8 @@ language: python
 
 matrix:
     include:
-        - python: 2.7
-          env: TOXENV=py27
+#        - python: 2.7
+#          env: TOXENV=py27
         - python: 3.6
           env: TOXENV=py36
         - python: 3.7
@@ -14,12 +14,12 @@ matrix:
           env: TOXENV=py38
         - python: 3.9
           env: TOXENV=py39
-        - python: 2.7
-          env: TOXENV=py2pep8
-        - python: 3.6
-          env: TOXENV=py3pep8
-        - python: 3.6
-          env: TOXENV=docs
+#        - python: 2.7
+#          env: TOXENV=py2pep8
+#        - python: 3.6
+#          env: TOXENV=py3pep8
+#        - python: 3.6
+#          env: TOXENV=docs
 
 # command to install dependencies for getting Tox running, other dependecies are installed by Tox
 before_install:
