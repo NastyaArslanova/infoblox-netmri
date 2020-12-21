@@ -16,7 +16,7 @@ defaults = {
 # Create NetMRI context manager. It will close session after execution
 with NetMRIEasy(**defaults) as easy:
     field_name = "chasis_serial_number"
-    #custom field creation
+    # custom field creation
     broker = easy.client.get_broker('CustomFields')
     broker.create_field(
         model='Device',
