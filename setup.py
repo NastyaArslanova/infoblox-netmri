@@ -30,7 +30,7 @@ setup(
     url='https://netmri_ip/api/dist',
     packages=find_packages(exclude='infoblox_netmri.tests'),
     package_dir={'infoblox_netmri':
-                     'infoblox_netmri'},
+                 'infoblox_netmri'},
     include_package_data=True,
     install_requires=requirements,
     license="Apache",
