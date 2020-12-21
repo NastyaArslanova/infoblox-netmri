@@ -20,7 +20,6 @@ test_requirements = [
 ]
 
 
-
 setup(
     name='infoblox-netmri',
     version="3.6.0.0",
