@@ -30,5 +30,5 @@ deploy:
   on:
     all_branches: true
 #    tags: true
-#    condition: $TOXENV == py36
+    condition: $TOXENV == py36
 
