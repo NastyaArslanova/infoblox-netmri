@@ -17,6 +17,8 @@ before_install:
 - pip install codecov tox
 script:
 - tox
+after_success:
+- codecov -e TOXENV
 deploy:
   provider: pypi
   username: __token__
@@ -25,9 +27,8 @@ deploy:
 #  skip_existing: true
 #  distributions: sdist bdist_wheel
   server: https://test.pypi.org/legacy/
-#  on:
+  on:
+    all_branches: true
 #    tags: true
 #    condition: $TOXENV == py36
-after_success:
-- codecov -e TOXENV
 
