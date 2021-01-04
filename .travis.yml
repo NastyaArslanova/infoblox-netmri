@@ -24,8 +24,8 @@ deploy:
   username: __token__
   password:
     secure: 3ROAJxyD3cZEt4ui0ZUXGfVGa1Q8czspOGnOvR30Nb7PGzDJ47HOK4x4FPzi8oVbOe/MVpe35kem1cgO6wm9/fLeXl/3wNekH5WrWQq1D2n6p4UXs2DMK+4Xlc4/pWPznGmPgxXMSAhZk+XLOCTjMWDz5M67omZnXvnRlRBa5V4fa5rNTBUehLoDab85KjWuemmT0j26daae2yPp5Z/P3/Sow1C4Ww64yZ7tHsiAVbfq7b4ObyQB3X7Pv1KHvy6rM2kOlTeVjNuruOFlSkl6bRpiA1DznifMKfqnRQIG/u7L30eH0GGl0keBCXkl2UdL21bVJddmeZoNZ5hHTy2aYuNixepTCAXPi5qTu2myFM0Hmy22wmUrJTbJHE6J3Zs4lZ8/nYMyf1FenlJhb/XpHxCFpe6SbjqUiqlG1zk0rpr4DKgXmS4WkFJri5vlcCJaSO3JiuPdCXGPTrj0mpIPMNcFMogs1YJYXR9q++7rAsQYf4B/oFANXLuuRTLc2NFkOopmhF74cJjRtRwZrJc7+PICpDIOHmVDvcfOgU3x2djSIvjMy8HkgqVI8EK3REEuJC9KIsGPsF0V96fzscuHmcvDb54MfAOaTiXaJ+EakixgreShHjZm0P3FdiWKWN6ImcSt2vSfmEHFLmBnT11IzfZioYHtDABiyehSty8Tvik=
-#  skip_existing: true
-#  distributions: sdist bdist_wheel
+  skip_existing: true
+  distributions: sdist bdist_wheel
   server: https://test.pypi.org/legacy/
   on:
     all_branches: true
