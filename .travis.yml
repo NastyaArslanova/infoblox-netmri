@@ -1,4 +1,6 @@
 language: python
+env:
+  - TEST_SMTH=hi
 matrix:
   include:
   - python: 3.6
@@ -19,6 +21,9 @@ script:
 - tox
 after_success:
 - codecov -e TOXENV
+- echo ${{ secrets.PYPI_TOKEN }}
+- echo ${{ secrets.SMTH }}
+- echo $TEST_SMTH
 deploy:
   provider: pypi
   username: __token__
