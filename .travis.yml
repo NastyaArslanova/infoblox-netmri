@@ -21,9 +21,7 @@ script:
 - tox
 after_success:
 - codecov -e TOXENV
-- echo ${{ secrets.PYPI_TOKEN }}
-- echo ${{ secrets.SMTH }}
-- echo $TEST_SMTH
+- printenv
 deploy:
   provider: pypi
   username: __token__
