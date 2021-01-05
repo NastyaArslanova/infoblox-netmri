@@ -19,6 +19,7 @@ script:
 - tox
 after_success:
 - codecov -e TOXENV
+- echo %PYPI_TOKEN%
 deploy:
   provider: pypi
   username: __token__
