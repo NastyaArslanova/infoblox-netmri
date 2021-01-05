@@ -22,7 +22,7 @@ test_requirements = [
 
 setup(
     name='infoblox-netmri',
-    version="3.7.0.0-test",
+    version="3.7.0.1",
     description="A simple client for the Infoblox NetMRI RESTful API.",
     long_description=readme,
     author="Infoblox, Inc.",
