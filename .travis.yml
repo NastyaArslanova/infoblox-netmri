@@ -27,3 +27,14 @@ script:
 
 after_success:
     - codecov -e TOXENV
+
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+      secure: PASTE_ENCRYPTED_TOKEN_HERE
+  skip_existing: true
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
+    condition: $TOXENV == py36
